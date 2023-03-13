@@ -1,0 +1,592 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+
+    font-family: 'Quicksand', sans-serif;
+    overflow-x: hidden;
+}
+.nav {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: auto;
+    color: white;
+    background-color: lightblue;
+    background: linear-gradient(to right, lightblue, rgb(5, 5, 31));
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hal {
+    margin-left: 50px;
+    color: rgb(5, 5, 31);
+    font-weight: lighter;
+}
+
+.hal:hover {
+    color: white;
+}
+
+.half {
+    margin-left: 500px;
+}
+
+#hal {
+    color: white;
+    font-weight: lighter;
+}
+
+#half {
+    margin-left: 100px;
+    color: white;
+}
+
+#half:hover,
+#hal:hover {
+    color: lightblue;
+}
+
+#desk {
+    width: 100%;
+    height: 100%;
+    z-index: -1000;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.contained {
+    display: inline-block;
+    /* position: absolute; */
+    color: white;
+    text-align: center;
+
+}
+
+#contain {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -10%;
+}
+
+.h1 {
+    margin-top: 40px;
+    font-size: 120px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+.p {
+    font-size: 50px;
+}
+
+.button {
+    color: white;
+    font-size: 20px;
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-right: 60px;
+    padding-bottom: 15px;
+    padding-left: 60px;
+    transition: 500ms height linear, 250ms width linear ease-in-out;
+
+}
+.button a {
+    color: white;
+}
+.button:hover {
+    background-color: lightblue;
+    padding-top: 18px;
+    padding-right: 65px;
+    padding-bottom: 18px;
+    padding-left: 65px;
+}
+
+#services {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 100px;
+
+}
+
+.app {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+.app.appear {
+    opacity: 1;
+}
+
+.row1 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: space-evenly;
+
+
+}
+
+.row2 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: space-evenly;
+
+}
+
+#projects {
+    display: flex;
+    flex-direction: row;
+}
+
+.img {
+    width: 80px;
+    height: 80px;
+}
+
+#we,
+#wewe {
+    font-family: cursive;
+    color: rgb(103, 167, 189);
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+#wewe {
+    margin-bottom: 70px;
+}
+
+.color {
+    color: rgb(5, 5, 31);
+}
+
+.others {
+    font-family: cursive;
+    color: rgb(103, 167, 189);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+
+.strings {
+    background: linear-gradient(to right, lightblue, rgb(5, 5, 31));
+    padding-bottom: 30px;
+    padding-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 200px;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+#white,
+.white {
+    color: whitesmoke;
+}
+
+.proj {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.git {
+    margin-top: 100px;
+}
+
+#about {
+    margin-left: 100px;
+}
+
+.present {
+    display: flex;
+    flex-direction: row;
+}
+
+.past {
+    display: flex;
+    flex-direction: row;
+}
+
+.alt {
+    width: 400px;
+    height: 500px;
+    border: 3px solid lightblue;
+    border-radius: 10px;
+}
+
+.about {
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 50px;
+    color: lightblue;
+    color: rgb(5, 5, 31);
+
+}
+
+.me {
+    color: rgb(5, 5, 31);
+    color: rgb(103, 167, 189);
+}
+
+.view,
+.views {
+    text-align: center;
+    margin-top: 15%;
+    margin-left: 20%;
+    font-size: larger;
+}
+
+.views {
+    margin-right: 30px;
+}
+
+.present {
+    margin-bottom: 50px;
+}
+
+.past {
+    margin-bottom: 150px;
+}
+
+.contact {
+    width: 80%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 18px 0 #0000002c;
+    transition: 0.3s ease box-shadow;
+}
+
+#Contact {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact:hover {
+    box-shadow: 0px 0px 5px 0 #0000002c;
+}
+
+#contact .icon {
+    width: 70px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.h2 {
+    text-align: center;
+    color: rgb(103, 167, 189);
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
+.span {
+    color: rgb(5, 5, 31);
+}
+
+footer {
+
+    background: linear-gradient(to right, lightblue, rgb(5, 5, 31));
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+}
+
+.alt {
+    transform: translateX(-50%);
+    transition: opacity 250ms ease-in, transform 400ms ease-in;
+    opacity: 0;
+}
+
+.view,
+.views {
+    transform: translateX(50%);
+    transition: opacity 250ms ease-in, transform 400ms ease-in;
+    opacity: 0;
+}
+
+.alt.appear,
+#sliders.appear {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.check {
+    display: none;
+}
+
+/* mobile website responsiveness */
+@media (max-width:1024px) {
+    .half {
+        margin-left: 200px;
+    }
+}
+
+@media (max-width:768px) {
+    .half {
+        margin-left: 50px;
+    }
+
+    #half {
+        margin-left: 70px;
+    }
+
+    .row1,
+    .row2,
+    .present,
+    .past,
+    #Contact {
+        display: flex;
+        flex-direction: column;
+    }
+    .view,.views{
+        margin-left: -55px;
+    }
+    .alt{
+        margin-left: 70px;
+    }
+    .h1{
+        font-size: 50px;
+    }
+    .contact{
+        padding-right: 40px;
+    }
+}
+
+@media(max-width : 425px) {
+    html {
+        overflow-x: none;
+    }
+
+    .nav {
+        position: fixed;
+
+
+    }
+
+    #desk {
+        margin-top: 30px;
+        height: 550px;
+    }
+
+    .half {
+        display: grid;
+        position: absolute;
+        background-color: rgb(5, 5, 31, 0.7);
+        text-align: center;
+        height: 300px;
+        margin-left: 212px;
+        width: 50%;
+        top: 45px;
+        transition: 2s;
+        transform: scale(1, 0);
+        transform-origin: top;
+        transition: transform 500ms ease-in-out;
+
+    }
+
+    #half {
+        margin-left: 0;
+    }
+
+    .hal {
+        font-weight: bold;
+        align-items: center;
+        margin-left: 40%;
+    }
+
+    #half,
+    #hal {
+        opacity: 0;
+        transition: opacity 250ms ease-in-out;
+    }
+
+    .check:checked~.half {
+        transform: scale(1, 1);
+        transition: transform 500ms ease-in-out;
+
+    }
+
+    .check:checked~.half #half {
+        opacity: 1;
+        transition: opacity 500ms ease-in-out;
+    }
+
+    .check:checked~.half #hal {
+        opacity: 1;
+        transition: opacity 500ms ease-in-out;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 10px;
+        margin-top: 14px;
+    }
+
+    .bar {
+        display: block;
+        background-color: white;
+        height: 3px;
+        width: 30px;
+        border-radius: 3px;
+        margin-bottom: 3px;
+
+    }
+
+    .h1 {
+        font-size: 70px;
+    }
+
+    .p {
+        font-size: xx-large;
+    }
+
+    .button {
+        font-size: 20px;
+        margin-top: 20px;
+        padding-top: 15px;
+        padding-right: 60px;
+        padding-bottom: 15px;
+        padding-left: 60px;
+    }
+
+    #we,
+    #wewe,
+    .others {
+        font-size: 30px;
+    }
+
+    .row1,
+    .row2,
+    .present,
+    .past,
+    #Contact,
+    #projects {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .app {
+        margin-bottom: 10px;
+    }
+
+    .strings {
+        background: none;
+        color: black;
+
+    }
+
+    .white {
+        color: rgb(103, 167, 189);
+    }
+
+    .centre {
+        display: initial;
+        background: linear-gradient(to right, lightblue, rgb(5, 5, 31));
+        padding-bottom: 50px;
+        padding-top: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        text-align: center;
+        color: white;
+
+    }
+
+    .proj {
+        color: rgb(5, 5, 31);
+    }
+
+    .about {
+        margin-right: 50px;
+    }
+
+   .alt {
+        width: 200px;
+        height: 300px;
+        margin-left: 0px;
+    }
+
+   .view,
+    .views {
+        font-size: small;
+        margin-left: -50px;
+        margin-right: 20px;
+    }
+    
+
+    .contact {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+}
+
+@media (max-width : 320px) {
+
+    .half {
+        margin-left: 160px;
+    }
+
+    #project {
+        margin-left: 10px;
+    }
+
+    .centre {
+        margin-left: 20px;
+        margin-left: 20px;
+
+    }
+
+
+}
+
+@media (min-width : 2560px) {
+    #half {
+        margin-left: 500px;
+    }
+
+    .present,
+    .past {
+        margin-left: 0px;
+    }
+}
