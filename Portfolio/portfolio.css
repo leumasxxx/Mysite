@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
   
 }
 
@@ -383,9 +384,6 @@ footer {
 }
 
 @media(max-width : 425px) {
-    html {
-        overflow-x: none;
-    }
 
     .nav {
         position: fixed;
@@ -541,14 +539,14 @@ footer {
    .alt {
         width: 200px;
         height: 300px;
-        margin-left: 0px;
+        margin-left: 20px;
     }
 
    .view,
     .views {
         font-size: small;
-        margin-left: -50px;
-        margin-right: 20px;
+        margin-left: 0px;
+        margin-right: 50px;
     }
     
 
@@ -562,21 +560,34 @@ footer {
 
 }
 
-@media (max-width : 320px) {
+@media (max-width : 375px) {
 
     .half {
         margin-left: 160px;
     }
 
     #project {
-        margin-left: 10px;
+        margin-left: 20px;
     }
 
     .centre {
-        margin-left: 20px;
-        margin-left: 20px;
+        margin-left: 40px;
+      
 
     }
+    .view,.views{
+        margin-right: 70px;
+
+    }
+    .alt{
+        width: 150px;
+        height: 240px;
+    }
+    .contact{
+        margin-left: 30px;
+    }
+
+    
 
 
 }
@@ -589,5 +600,17 @@ footer {
     .present,
     .past {
         margin-left: 0px;
+    }
+    .alt{
+        margin-left: 500px;
+    }
+    .view,.views{
+        margin-left: 500px;
+    }
+    .centre{
+        margin-left: 150px;
+    }
+    html{
+        font-size:x-large;
     }
 }
