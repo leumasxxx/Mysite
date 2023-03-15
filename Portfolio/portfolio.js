@@ -31,7 +31,7 @@ const sliders = document.querySelectorAll("#sliders")
 const slideOptions = {
     root: null,
     threshold: 0,
-    rootMargin: "-200px"
+    rootMargin: "-200px 50px 0px 20px"
 
 }
 
